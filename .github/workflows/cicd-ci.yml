@@ -28,5 +28,5 @@ jobs:
       - name: Upload JAR Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: employee-service-jar
+          name: cicd-service-jar
           path: target/*.jar
