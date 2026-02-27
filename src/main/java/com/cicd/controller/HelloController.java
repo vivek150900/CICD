@@ -19,7 +19,7 @@ public class HelloController {
 
     @GetMapping("/dummy")
     public String dummyMessage1(){
-        return "Dummy Message";
+        return "Dummy message";
     }
 
 }
