@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    private final int age = 25;
+
     @GetMapping("/message")
     public String getMessage(){
         return "Hello User";
