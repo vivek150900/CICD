@@ -11,4 +11,10 @@ public class HelloController {
         return "Hello User";
     }
 
+
+    @GetMapping("/dummy")
+    public String dummyMessage(){
+        return "Dummy Message";
+    }
+
 }
