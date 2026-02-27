@@ -14,12 +14,7 @@ public class HelloController {
 
     @GetMapping("/dummy")
     public String dummyMessage(){
-        return "Dummy Message";
-    }
-
-    @GetMapping("/dummy")
-    public String dummyMessage1(){
-        return "Dummy message";
+        return "Dummy ";
     }
 
 }
