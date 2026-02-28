@@ -32,7 +32,7 @@ jobs:
       - name: Build and Analyze
         run: |
           mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=viveklohakare \
+            -Dsonar.projectKey=vivek150900_CICD \
             -Dsonar.organization=viveklohakare \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
