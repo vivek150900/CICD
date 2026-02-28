@@ -30,11 +30,12 @@ jobs:
           key: ${{ runner.os }}-sonar
 
       - name: Build and Analyze
-        run: mvn clean verify sonar:sonar \
-          -Dsonar.projectKey=vivek150900 \
-          -Dsonar.organization=vivek150900 \
-          -Dsonar.host.url=https://sonarcloud.io \
-          -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        run: |
+          mvn clean verify sonar:sonar \
+            -Dsonar.projectKey=YOUR_PROJECT_KEY \
+            -Dsonar.organization=YOUR_ORG_NAME \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
       - name: Upload JAR Artifact
         uses: actions/upload-artifact@v4
